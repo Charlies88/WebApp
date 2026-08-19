@@ -60,14 +60,15 @@ a:hover {
 h1 {
     text-transform: uppercase;
     color: whitesmoke;
-    font-family: fantasy;
+    font-family: fantasy, Arial, serif;
     font-weight: 100;
 }
 
 h2 {
     color: whitesmoke;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: 100;
+    font-family:serif, Georgia;
+    font-weight: 25;
+    font-size: large;
 }
 
 img {
@@ -165,6 +166,23 @@ tbody tr:nth-child(even) {
     background-color: #e6e3e3;
 }
 
+
+.privacy-policy {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    text-align: left;
+    font-family: Georgia, serif;
+    color: black;
+    background-color: whitesmoke;
+}
+.privacy-policy h1,
+.privacy-policy h2 {
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
 /* footer: list of open times */
 .hours {
     display: inline-block;
@@ -180,4 +198,25 @@ tbody tr:nth-child(even) {
     column-gap: 10px;
 }
 
+footer {
+    background-color: rgba(197, 74, 74, 0.877);
+    color: whitesmoke;
+    padding: 20px;
+    text-align: center;
+}
 
+footer a {
+    color: whitesmoke;
+}
+
+footer .copyright {
+    font-size: 13px;
+}
+
+@media screen and (min-width: 600px) {
+    .footer-top {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
