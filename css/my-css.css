@@ -1,104 +1,23 @@
-/* Universal box sizing */
-* {
-    box-sizing: border-box;
+
+
+.brand-bg {
+    background-color: rgba(230, 93, 93, 0.877);
+}
+
+.brand-text {
+    line-height: 1.1;
 }
 
 body {
-    text-align: center;
-    margin: 0;
-    background-color: rgba(245, 93, 93, 0.945);
-}
-
-header {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-/*-- contais title and logo --*/
-.brand {
-    display: flex;
-    align-items: center;
-    float:left ;
-}
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 10px;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-}
-nav a {
-    color: whitesmoke;
-    font-family: Arial, sans-serif;
-    text-decoration: none;
-    font-size: clamp(12px, 2vw, 24px)
-}
-
-/* nav indicates current page */
-li.active a {
-    position: relative;
-}
-li.active a::before {
-    content: "";
-    display: block;
-    width: 8px;
-    height: 8px;
-    background-color: whitesmoke;
-    border-radius: 50%;
-    margin: 0 auto 4px;
-}
-
-
-a:hover {
-    color: blue;
-}
-
-h1 {
-    text-transform: uppercase;
-    color: whitesmoke;
-    font-family: fantasy, Arial, serif;
-    font-weight: 100;
-}
-
-h2 {
-    color: whitesmoke;
-    font-family:serif, Georgia;
-    font-weight: 25;
-    font-size: large;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-
-
-/* the contact and booing forms frame */
-iframe {
-    width: 600px;
-    max-width: 100%;
-    height: 800px;
-    padding: 25px;
-}
-
-.container{
-    display: flex;
-    min-height: 60vh;
-    flex-wrap: wrap;
-    align-items: center;      /* vertical centering */
-    justify-content: center;  /* horizontal centering */
-    background-color:rgb(224, 223, 223);
+    background-color: rgb(216, 208, 208);
 }
 
 .banner-img {
     width: 100%;
     height: 350px;
     object-fit: cover;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 @media (min-width: 1024px) {
@@ -107,65 +26,11 @@ iframe {
     }
 }
 
-.box{
-    width: 320px;
-    max-width: 90vw;
-    height: 200px;
-    border-radius: 10px;
-    margin: 10px;
-    border: solid rgb(197, 66, 66) 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: rgba(197, 74, 74, 0.877);
-    
+iframe {
+    width: 600px;
+    max-width: 100%;
+    height: 800px;
 }
-
-.box img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 8px;
-    
-}
-
-/* table of services */
-table {
-    width: 90%;
-    margin: 40px auto;
-    border-collapse: collapse;
-    background: whitesmoke;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-    font-family: Georgia, serif;
-    text-align: left;
-}
-th {
-    background-color: rgba(245, 93, 93, 0.945);
-    color: white;
-    padding: 16px 20px;
-    font-weight: normal;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-size: 13px;
-}
-td {
-    padding: 16px 20px;
-    color: #333;
-}
-/*-- service column --*/
-td:first-child {
-    font-weight: bold;
-}
-/*-- price column --*/
-td:last-child {
-    color: saddlebrown;
-    font-weight: bold;
-}
-/*-- everysecond row has different background --*/
-tbody tr:nth-child(even) {
-    background-color: #e6e3e3;
-}
-
 
 .privacy-policy {
     max-width: 800px;
@@ -182,41 +47,6 @@ tbody tr:nth-child(even) {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-
-/* footer: list of open times */
-.hours {
-    display: inline-block;
-}
-.hours ul {
-    list-style: none;
-    padding: 0;
-}
-.hours li {
-    display: flex;
-    justify-content: space-between;
-    max-width: 250px;
-    column-gap: 10px;
-}
-
-footer {
-    background-color: rgba(197, 74, 74, 0.877);
-    color: whitesmoke;
-    padding: 20px;
-    text-align: center;
-}
-
-footer a {
-    color: whitesmoke;
-}
-
-footer .copyright {
-    font-size: 13px;
-}
-
-@media screen and (min-width: 600px) {
-    .footer-top {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
+.hours-list {
+    max-width: 220px;
 }
