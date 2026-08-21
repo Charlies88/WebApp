@@ -44,7 +44,9 @@ iframe {
 .privacy-policy h1,
 .privacy-policy h2 {
     color: black;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: 600;
 }
 
 .hours-list {
